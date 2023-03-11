@@ -12,26 +12,17 @@ function Header() {
         </div>
       </Link>
 
-      <div className='w-[30%]' />
-      <Link href='auth' className='w-52 text-center cursor-pointer text-[#eee]'>
+      <div className='w-[20%]' />
+      <Link href='auth' className='headerItem'>
         <div>Auth</div>
       </Link>
-      <Link
-        href='apicalls'
-        className='w-52 text-center cursor-pointer text-[#eee]'
-      >
+      <Link href='apicalls' className='headerItem'>
         <div>API Calls</div>
       </Link>
-      <Link
-        href='pastwork'
-        className='w-52 text-center cursor-pointer text-[#eee]'
-      >
+      <Link href='pastwork' className='headerItem'>
         <div>Past Work</div>
       </Link>
-      <Link
-        href='contact'
-        className='w-52 text-center cursor-pointer text-[#eee]'
-      >
+      <Link href='contact' className='headerItem'>
         <div>Contact</div>
       </Link>
     </div>

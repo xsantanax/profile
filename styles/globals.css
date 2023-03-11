@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .headerItem {
+    @apply w-52 text-center cursor-pointer text-[#eee];
+  }
+}
