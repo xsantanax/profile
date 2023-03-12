@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-function PastWork() {
+function Work() {
   return (
     <>
       <div className='py-20 px-12 h-screen'>
@@ -45,4 +45,4 @@ function PastWork() {
   )
 }
 
-export default PastWork
+export default Work

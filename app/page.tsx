@@ -1,5 +1,6 @@
-import PastWork from '../components/PastWork'
+import Work from '../components/Work'
 import Contact from '../components/Contact'
+import About from '../components/About'
 
 function HomePage() {
   return (
@@ -19,15 +20,12 @@ function HomePage() {
         </div>
       </div>
 
-      {/* <div className='flex justify-center'>
-        <img
-          src='img/nightcity.jpg'
-          className='h-screen w-full min-w-[1440px] min-h-[766px]'
-        />
-      </div> */}
-      <div id='pastwork' />
-      <a href='#pastwork' aria-hidden='true'></a>
-      <PastWork />
+      <div id='about' />
+      <a href='#about' aria-hidden='true'></a>
+      <About />
+      <div id='work' />
+      <a href='#work' aria-hidden='true'></a>
+      <Work />
       <div id='contact' />
       <a href='#contact' aria-hidden='true'></a>
       <Contact />

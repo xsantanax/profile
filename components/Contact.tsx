@@ -1,4 +1,4 @@
-function PastWork() {
+function Contact() {
   return (
     <>
       <div className='py-20 px-12 h-screen'>
@@ -8,4 +8,4 @@ function PastWork() {
   )
 }
 
-export default PastWork
+export default Contact

@@ -33,6 +33,15 @@ function Header() {
       <div
         className='headerItem'
         onClick={() => {
+          window.location.href = '#about'
+        }}
+      >
+        About
+      </div>
+
+      <div
+        className='headerItem'
+        onClick={() => {
           window.location.href = '#experience'
         }}
       >
@@ -42,18 +51,10 @@ function Header() {
       <div
         className='headerItem'
         onClick={() => {
-          window.location.href = '#pastwork'
+          window.location.href = '#work'
         }}
       >
-        Past Work
-      </div>
-      <div
-        className='headerItem'
-        onClick={() => {
-          window.location.href = '#try'
-        }}
-      >
-        Try it out
+        Work
       </div>
 
       <div
@@ -64,10 +65,6 @@ function Header() {
       >
         Contact
       </div>
-
-      {/* <Link href='contact' className='headerItem'>
-        <div>Contact</div>
-      </Link> */}
     </div>
   )
 }

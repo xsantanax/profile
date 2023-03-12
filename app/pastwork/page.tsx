@@ -1,9 +1,9 @@
-import PastWork from '../../components/PastWork'
+import Work from '../../components/Work'
 
 function PastWorkPage() {
   return (
     <div className='bg-[#343541] pt-[32px]'>
-      <PastWork />
+      <Work />
     </div>
   )
 }
