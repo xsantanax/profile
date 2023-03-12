@@ -22,7 +22,7 @@ function Header() {
         className='cursor-pointer min-w-[240px] text-[#eee] text-center animate-pulse'
         // style={{ cursor: 'url(/dollar.png),auto' }}
         onClick={() => {
-          window.location.href = '/'
+          window.location.href = '#/'
         }}
       >
         Rafael Santana

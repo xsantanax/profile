@@ -4,6 +4,8 @@ import Contact from '../components/Contact'
 function HomePage() {
   return (
     <div className='overflow-hidden'>
+      <div id='/' />
+      <a href='#/' aria-hidden='true'></a>
       <div
         style={{ backgroundImage: 'url(img/nightcity.jpg)' }}
         className='max-w-[100%] bg-center bg-cover text-[#ddd]
