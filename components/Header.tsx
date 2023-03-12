@@ -14,10 +14,13 @@ function Header() {
 
       <div className='w-[30%]' />
       <Link href='apicalls' className='headerItem'>
-        <div>API Calls</div>
+        <div>Experience</div>
       </Link>
       <Link href='pastwork' className='headerItem'>
         <div>Past Work</div>
+      </Link>
+      <Link href='contact' className='headerItem'>
+        <div>Try it out</div>
       </Link>
       <Link href='contact' className='headerItem'>
         <div>Contact</div>

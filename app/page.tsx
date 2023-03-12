@@ -21,13 +21,14 @@ function HomePage() {
 
       <div
         style={{ backgroundImage: 'url(img/nightcity.jpg)' }}
-        className=' max-w-[100%] bg-center 
-        h-screen w-full min-w-[1440px] min-h-[766px] bg-cover'
+        className='max-w-[100%] bg-center bg-cover text-[#ddd]
+        h-screen w-full min-h-[766px]'
       >
-        <div className='px-16 pt-32 text-[#ddd]'>
-          Hi, I'm Rafael Santana, a full-stack developer from Brazil. I'm
-          passionate about building great software and I'm always looking for
-          new challenges.
+        <div className='px-16 pt-32 '>Hi, I am</div>
+        <div className='px-16 pt-6 text-[68px] text-bold'>Rafael Santana</div>
+        <div className='px-16 pt-6'>
+          A software engineer specialized in building amazing digital
+          experiences.
         </div>
       </div>
 
