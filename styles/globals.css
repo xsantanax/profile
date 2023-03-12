@@ -9,4 +9,7 @@
   * {
     @apply scroll-smooth;
   }
+  body {
+    @apply bg-[#01243D];
+  }
 }

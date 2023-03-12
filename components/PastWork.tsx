@@ -4,7 +4,6 @@ function PastWork() {
   return (
     <>
       <div className='py-20 px-12 h-screen'>
-        {/* <div className='p-10 px-12 text-[#ddd] bg-[#111] h-screen'> */}
         <div>Check out some of my past projects</div>
         <div className='mt-10 flex gap-8 flex-wrap'>
           <Link href='https://sort.xyz' target='_blank'>

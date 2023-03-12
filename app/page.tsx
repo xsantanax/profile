@@ -3,12 +3,12 @@ import Contact from '../components/Contact'
 
 function HomePage() {
   return (
-    <div className='overflow-hidden'>
+    <div className='overflow-hidden text-[#ddd]'>
       <div id='/' />
       <a href='#/' aria-hidden='true'></a>
       <div
         style={{ backgroundImage: 'url(img/nightcity.jpg)' }}
-        className='max-w-[100%] bg-center bg-cover text-[#ddd]
+        className='max-w-[100%] bg-center bg-cover 
         h-screen w-full min-h-[766px]'
       >
         <div className='px-16 pt-32 '>Hi, I am</div>
