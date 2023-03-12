@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import HeaderTransparent from '../components/HeaderTransparent'
 import PastWork from '../components/PastWork'
 import Header from '../components/Header'
+import Contact from '../components/Contact'
 
 function HomePage() {
   const [isOnTop, setIsOnTop] = useState(window.pageYOffset < 5)
@@ -38,8 +39,12 @@ function HomePage() {
           className='h-screen w-full min-w-[1440px] min-h-[766px]'
         />
       </div> */}
-
+      <div id='pastwork' />
+      <a href='#pastwork' aria-hidden='true'></a>
       <PastWork />
+      <div id='contact' />
+      <a href='#contact' aria-hidden='true'></a>
+      <Contact />
     </div>
   )
 }

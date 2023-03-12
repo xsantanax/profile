@@ -4,6 +4,9 @@
 
 @layer components {
   .headerItem {
-    @apply w-52 text-center cursor-pointer text-[#eee];
+    @apply w-52 min-w-[40px] text-center cursor-pointer text-[#eee] hover:animate-pulse;
+  }
+  * {
+    @apply scroll-smooth;
   }
 }
