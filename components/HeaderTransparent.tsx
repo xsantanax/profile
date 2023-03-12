@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
-function Header() {
+function HeaderTransparent() {
   return (
-    <div className='fixed bg-[#000] space-x-8 h-16 w-full px-10 flex justify-center items-center'>
+    <div className='fixed space-x-8 h-16 w-full px-10 flex justify-center items-center border-b-[0.5px] border-[#eee]'>
       <Link href='/'>
         <div
           className='cursor-pointer min-w-[240px] text-[#eee] text-center animate-pulse'
@@ -26,4 +26,4 @@ function Header() {
   )
 }
 
-export default Header
+export default HeaderTransparent

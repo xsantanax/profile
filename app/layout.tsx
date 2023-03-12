@@ -1,35 +1,35 @@
 import '../styles/globals.css'
-import { SessionProvider } from '../components/SessionProvider'
-import { getServerSession } from 'next-auth'
-import { authOptions } from '../pages/api/auth/[...nextauth]'
+// import { SessionProvider } from '../components/SessionProvider'
+// import { getServerSession } from 'next-auth'
+// import { authOptions } from '../pages/api/auth/[...nextauth]'
 // import ClientProvider from '../components/ClientProvider'
-import Login from '../components/Login'
-import Header from '../components/Header'
+// import Login from '../components/Login'
+// import Header from '../components/Header'
 
 export default async function RootLayout({
   children
 }: {
   children: React.ReactNode
 }) {
-  const session = await getServerSession(authOptions)
+  // const session = await getServerSession(authOptions)
 
   return (
     <html>
       <head />
       <body>
-        <SessionProvider session={session}>
+        {/* <SessionProvider session={session}>
           {!session ? (
             <Login />
-          ) : (
-            <div className='flex flex-col'>
-              <Header />
-              <div className='flex mt-16'>
-                {/* <ClientProvider /> */}
-                <div className='bg-[#343541] flex-1 h-screen'>{children}</div>
-              </div>
-            </div>
-          )}
-        </SessionProvider>
+          ) : ( */}
+        <div className='flex flex-col'>
+          {/* <Header /> */}
+          {/* <div className='flex mt-16'> */}
+          {/* <ClientProvider /> */}
+          {children}
+        </div>
+        {/* </div> */}
+        {/* )}
+        </SessionProvider> */}
       </body>
     </html>
   )

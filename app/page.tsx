@@ -1,46 +1,24 @@
-import Link from 'next/link'
+import HeaderTransparent from '../components/HeaderTransparent'
+import PastWork from '../components/PastWork'
 
 function HomePage() {
   return (
-    <div className='p-10 px-12 text-[#ddd]'>
-      <div>Check out some of my past projects</div>
-      <div className='mt-10 flex gap-8 flex-wrap'>
-        <Link href='https://sort.xyz' target='_blank'>
-          <div className='w-48 h-48 rounded-[40px] flex items-center hover:animate-pulse'>
-            <img className='w-48 h-32' src='img/sort.png' />
-          </div>
-        </Link>
-
-        <Link href='https://highlinefast.com' target='_blank'>
-          <img
-            className=' w-48 h-48 rounded-[40px] hover:animate-pulse'
-            src='img/highline.webp'
-          />
-        </Link>
-
-        <Link href='https://bucketofcrabs.net' target='_blank'>
-          <img
-            className=' w-48 h-48 rounded-[40px] hover:animate-pulse'
-            src='img/boc.jpeg'
-          />
-        </Link>
-
-        <Link href='https://bannerwave.com' target='_blank'>
-          <img
-            className=' w-48 h-48 rounded-[40px] hover:animate-pulse'
-            src='img/bannerwave.jpeg'
-          />
-        </Link>
-
-        <Link href='https://politik.vercel.app/' target='_blank'>
-          <img
-            className=' w-48 h-48 rounded-[40px] hover:animate-pulse'
-            src='img/politik.png'
-          />
-        </Link>
+    <div className='overflow-hidden'>
+      <HeaderTransparent />
+      {/* <div
+        style={{ backgroundImage: 'url(img/nightcity.jpg)' }}
+        className='h-screen w-full min-w-[1000px] max-w-[100%] bg-center bg-fill'
+      /> */}
+      <div className='flex justify-center items-center'>
+        <img
+          src='img/nightcity.jpg'
+          className='h-screen w-full  min-w-[1440px]'
+        />
       </div>
+
+      <PastWork />
+      <div className='h-screen' />
     </div>
   )
 }
-
 export default HomePage
