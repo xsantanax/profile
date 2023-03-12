@@ -1,6 +1,23 @@
+'use client'
+import { useState, useEffect } from 'react'
+
 function Header() {
+  const [isAtTop, setIsAtTop] = useState(window.pageYOffset < 1)
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', () =>
+        setIsAtTop(window.pageYOffset < 1)
+      )
+    }
+  }, [])
+
   return (
-    <div className='fixed bg-[#111] space-x-8 h-16 w-full px-10 flex justify-center items-center'>
+    <div
+      className={`fixed  space-x-8 h-16 w-full px-10 flex justify-center items-center 
+    ${isAtTop ? 'border-b-[0.5px] border-[#eee]' : 'bg-[#111]'}
+    `}
+    >
       <div
         className='cursor-pointer min-w-[240px] text-[#eee] text-center animate-pulse'
         // style={{ cursor: 'url(/dollar.png),auto' }}

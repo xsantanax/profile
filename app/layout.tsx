@@ -4,7 +4,7 @@ import '../styles/globals.css'
 // import { authOptions } from '../pages/api/auth/[...nextauth]'
 // import ClientProvider from '../components/ClientProvider'
 // import Login from '../components/Login'
-// import Header from '../components/Header'
+import Header from '../components/Header'
 
 export default async function RootLayout({
   children
@@ -22,7 +22,7 @@ export default async function RootLayout({
             <Login />
           ) : ( */}
         <div className='flex flex-col'>
-          {/* <Header /> */}
+          <Header />
           {/* <div className='flex mt-16'> */}
           {/* <ClientProvider /> */}
           {children}
