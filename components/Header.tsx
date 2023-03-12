@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 function Header() {
   return (
-    <div className='fixed bg-[#000] space-x-8 h-16 w-full px-10 flex justify-center items-center'>
+    <div className='fixed bg-[#111] space-x-8 h-16 w-full px-10 flex justify-center items-center'>
       <Link href='/'>
         <div
           className='cursor-pointer min-w-[240px] text-[#eee] text-center animate-pulse'
