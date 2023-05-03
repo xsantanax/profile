@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 
 function Header() {
-  const [isAtTop, setIsAtTop] = useState(window.pageYOffset < 1)
+  const [isAtTop, setIsAtTop] = useState(true)
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -19,7 +19,7 @@ function Header() {
     `}
     >
       <div
-        className='cursor-pointer min-w-[240px] text-[#eee] text-center animate-pulse'
+        className="cursor-pointer min-w-[240px] text-[#eee] text-center animate-pulse"
         // style={{ cursor: 'url(/dollar.png),auto' }}
         onClick={() => {
           window.location.href = '#/'
@@ -28,10 +28,10 @@ function Header() {
         Rafael Santana
       </div>
 
-      <div className='w-[20%]' />
+      <div className="w-[20%]" />
 
       <div
-        className='headerItem'
+        className="headerItem"
         onClick={() => {
           window.location.href = '#about'
         }}
@@ -40,7 +40,7 @@ function Header() {
       </div>
 
       <div
-        className='headerItem'
+        className="headerItem"
         onClick={() => {
           window.location.href = '#experience'
         }}
@@ -49,7 +49,7 @@ function Header() {
       </div>
 
       <div
-        className='headerItem'
+        className="headerItem"
         onClick={() => {
           window.location.href = '#work'
         }}
@@ -58,7 +58,7 @@ function Header() {
       </div>
 
       <div
-        className='headerItem'
+        className="headerItem"
         onClick={() => {
           window.location.href = '#contact'
         }}
