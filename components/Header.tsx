@@ -14,12 +14,12 @@ function Header() {
 
   return (
     <div
-      className={`fixed  space-x-8 h-16 w-full px-10 flex justify-center items-center 
+      className={`fixed space-x-8 h-16 w-full px-10 flex justify-center items-center 
     ${isAtTop ? 'border-b-[0.5px] border-[#eee]' : 'bg-[#111]'}
     `}
     >
       <div
-        className="cursor-pointer min-w-[240px] text-[#eee] text-center animate-pulse"
+        className='cursor-pointer min-w-[240px] text-[#eee] text-center animate-pulse'
         // style={{ cursor: 'url(/dollar.png),auto' }}
         onClick={() => {
           window.location.href = '#'
@@ -28,10 +28,10 @@ function Header() {
         Rafael Santana
       </div>
 
-      <div className="w-[20%]" />
+      <div className='w-[20%]' />
 
       <div
-        className="headerItem"
+        className='headerItem'
         onClick={() => {
           window.location.href = '#'
         }}
@@ -40,7 +40,7 @@ function Header() {
       </div>
 
       <div
-        className="headerItem"
+        className='headerItem'
         onClick={() => {
           window.location.href = '#about'
         }}
@@ -49,7 +49,7 @@ function Header() {
       </div>
 
       <div
-        className="headerItem"
+        className='headerItem'
         onClick={() => {
           window.location.href = '#experience'
         }}
@@ -58,7 +58,7 @@ function Header() {
       </div>
 
       <div
-        className="headerItem"
+        className='headerItem'
         onClick={() => {
           window.location.href = '#contact'
         }}
