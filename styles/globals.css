@@ -3,13 +3,16 @@
 @tailwind utilities;
 
 @layer components {
-  .headerItem {
-    @apply w-52 min-w-[40px] text-center cursor-pointer text-[#eee] hover:animate-pulse;
-  }
   * {
     @apply scroll-smooth;
   }
   body {
     @apply bg-[#01243D];
+  }
+  .headerItem {
+    @apply w-52 min-w-[40px] text-center cursor-pointer text-[#eee] hover:animate-pulse;
+  }
+  .bodyItem {
+    @apply py-10 px-12;
   }
 }

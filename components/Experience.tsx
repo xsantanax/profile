@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Experience() {
   return (
-    <div className='py-20 px-12 h-screen'>
+    <div className='bodyItem'>
       <div>Check out some of my past projects</div>
       <div className='mt-10 flex gap-8 flex-wrap'>
         <Link href='https://sort.xyz' target='_blank'>

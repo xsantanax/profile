@@ -52,7 +52,7 @@ function Contact() {
   }
 
   return (
-    <div className='py-20 px-12 h-screen'>
+    <div className='bodyItem'>
       <div>Wanna talk? Send me a message</div>
 
       <form onSubmit={sendMessage} className='py-5 space-x-5 flex'>
