@@ -13,6 +13,6 @@
     @apply w-52 min-w-[40px] text-center cursor-pointer text-[#eee] hover:animate-pulse;
   }
   .bodyItem {
-    @apply py-10 px-12;
+    @apply py-40 px-12;
   }
 }
