@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 
 export default function HomePage() {
   return (
-    <div className='overflow-hidden text-[#ddd] flex flex-col items-center justify-center'>
+    <div className=' text-[#ddd] flex flex-col items-center justify-center'>
       <div id='/' />
       <a href='#/' aria-hidden='true'></a>
       <Home />
