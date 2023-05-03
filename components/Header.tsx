@@ -22,13 +22,22 @@ function Header() {
         className="cursor-pointer min-w-[240px] text-[#eee] text-center animate-pulse"
         // style={{ cursor: 'url(/dollar.png),auto' }}
         onClick={() => {
-          window.location.href = '#/'
+          window.location.href = '#'
         }}
       >
         Rafael Santana
       </div>
 
       <div className="w-[20%]" />
+
+      <div
+        className="headerItem"
+        onClick={() => {
+          window.location.href = '#'
+        }}
+      >
+        Home
+      </div>
 
       <div
         className="headerItem"
@@ -46,15 +55,6 @@ function Header() {
         }}
       >
         Experience
-      </div>
-
-      <div
-        className="headerItem"
-        onClick={() => {
-          window.location.href = '#work'
-        }}
-      >
-        Work
       </div>
 
       <div
