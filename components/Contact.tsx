@@ -13,7 +13,9 @@ import { db } from '../firebase'
 import SectionHeader from './SectionHeader'
 
 function Contact() {
-  const [prompt, setPrompt] = useState('')
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [text, setText] = useState('')
 
   const [messages] = useCollection(
     // collection(db, "users", session?.user?.email!, "chats", id, "messages")
@@ -22,13 +24,12 @@ function Contact() {
 
   const sendMessage = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    if (!prompt) return
-
-    const input = prompt.trim()
-    setPrompt('')
+    if (!text) return
 
     const message: Message = {
-      text: input,
+      name,
+      email,
+      text,
       createdAt: serverTimestamp()
       // user: {
       //   _id: session?.user?.email!,
@@ -56,23 +57,36 @@ function Contact() {
     <div id='contact' className='bodyItemWrapper pt-16'>
       <SectionHeader title='Contact' />
       <div className='bodyItemContent flex-col pt-16'>
-        <div>Wanna talk? Send me a message</div>
-
-        <form onSubmit={sendMessage} className='py-5 space-x-5 flex'>
+        <form onSubmit={sendMessage} className='py-5 space-y-5 flex flex-col'>
           <input
-            value={prompt}
-            className='px-4 py-2 rounded focus:outline-none w-[300px]'
+            value={name}
+            className='px-4 py-2 rounded focus:outline-none text-black'
             type='text'
+            placeholder='Your name'
+            onChange={(e) => setName(e.target.value)}
+          />
+
+          <input
+            value={email}
+            className='px-4 py-2 rounded focus:outline-none text-black'
+            type='text'
+            placeholder='Your email'
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <textarea
+            value={text}
+            className='px-4 py-2 h-[160px] rounded focus:outline-none text-black'
             placeholder='Type your message here...'
-            onChange={(e) => setPrompt(e.target.value)}
+            onChange={(e) => setText(e.target.value)}
           />
           <button
             type='submit'
-            disabled={!prompt}
+            // disabled={!name || !email || !text}
             className='bg-[#11A37F] hover:opacity-50 text-white font-bold px-4 py-2 rounded
-          disabled:cursor-not-allowed disabled:bg-gray-300'
+          disabled:cursor-not-allowed disabled:bg-gray-300 flex justify-center'
           >
-            <PaperAirplaneIcon className='h-4 w-4 rotate-45' />
+            <div>Send</div>
+            <PaperAirplaneIcon className='h-4 w-4 -rotate-45 mt-[3px] ml-3' />
           </button>
         </form>
 

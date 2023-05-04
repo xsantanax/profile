@@ -1,4 +1,6 @@
 type Message = {
+  name: string
+  email: string
   text: string
   createdAt: any
   // user: {
