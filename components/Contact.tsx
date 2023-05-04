@@ -53,43 +53,39 @@ function Contact() {
   }
 
   return (
-    <>
-      <div id='contact' />
-      <a href='#contact' aria-hidden='true'></a>
-      <div className='bodyItemWrapper pt-16'>
-        <SectionHeader title='Contact' />
-        <div className='bodyItemContent flex-col pt-16'>
-          <div>Wanna talk? Send me a message</div>
+    <div id='contact' className='bodyItemWrapper pt-16'>
+      <SectionHeader title='Contact' />
+      <div className='bodyItemContent flex-col pt-16'>
+        <div>Wanna talk? Send me a message</div>
 
-          <form onSubmit={sendMessage} className='py-5 space-x-5 flex'>
-            <input
-              value={prompt}
-              className='px-4 py-2 rounded focus:outline-none w-[300px]'
-              type='text'
-              placeholder='Type your message here...'
-              onChange={(e) => setPrompt(e.target.value)}
-            />
-            <button
-              type='submit'
-              disabled={!prompt}
-              className='bg-[#11A37F] hover:opacity-50 text-white font-bold px-4 py-2 rounded
+        <form onSubmit={sendMessage} className='py-5 space-x-5 flex'>
+          <input
+            value={prompt}
+            className='px-4 py-2 rounded focus:outline-none w-[300px]'
+            type='text'
+            placeholder='Type your message here...'
+            onChange={(e) => setPrompt(e.target.value)}
+          />
+          <button
+            type='submit'
+            disabled={!prompt}
+            className='bg-[#11A37F] hover:opacity-50 text-white font-bold px-4 py-2 rounded
           disabled:cursor-not-allowed disabled:bg-gray-300'
-            >
-              <PaperAirplaneIcon className='h-4 w-4 rotate-45' />
-            </button>
-          </form>
+          >
+            <PaperAirplaneIcon className='h-4 w-4 rotate-45' />
+          </button>
+        </form>
 
-          {messages?.docs.map((message) => (
-            <div
-              key={message.id}
-              className='flex  items-center space-x-4 p-5 border-b border-gray-200 hover:bg-gray-100 cursor-pointer'
-            >
-              {message.data().text}
-            </div>
-          ))}
-        </div>
+        {messages?.docs.map((message) => (
+          <div
+            key={message.id}
+            className='flex  items-center space-x-4 p-5 border-b border-gray-200 hover:bg-gray-100 cursor-pointer'
+          >
+            {message.data().text}
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   )
 }
 
