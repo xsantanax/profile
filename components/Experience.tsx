@@ -7,10 +7,10 @@ export default function Experience() {
       <SectionHeader title='Experience' />
       <div className='bodyItemContent'>
         <div className='bodyItem'>
-          <div className='mt-10 flex gap-10 flex-col'>
+          <div className='flex gap-10 flex-col'>
             <div className='flex'>
               <Link href='https://sort.xyz' target='_blank'>
-                <div className='w-48 h-48 bg-white p-[12px] px-[15px] rounded-[40px] flex items-center hover:animate-pulse'>
+                <div className='w-48 h-48 bg-white p-[12px] px-[16px] rounded-[24px] flex items-center hover:animate-pulse'>
                   <img src='img/sort.png' />
                 </div>
               </Link>
@@ -26,10 +26,9 @@ export default function Experience() {
 
             <div className='flex'>
               <Link href='https://highlinefast.com' target='_blank'>
-                <img
-                  className=' w-48 h-48 rounded-[40px] hover:animate-pulse'
-                  src='img/highline.webp'
-                />
+                <div className='w-48 h-48 bg-white p-[12px] rounded-[24px] flex items-center hover:animate-pulse'>
+                  <img src='img/highline.webp' />
+                </div>
               </Link>
               <div className='ml-12 mt-4'>
                 HighlineFast is an internet provider company, which the website
@@ -41,7 +40,7 @@ export default function Experience() {
 
             <div className='flex'>
               <Link href='https://bucketofcrabs.net' target='_blank'>
-                <div className='w-48 h-48 bg-white p-[12px] rounded-[40px] flex items-center hover:animate-pulse'>
+                <div className='w-48 h-48 bg-white p-[12px] rounded-[24px] flex items-center hover:animate-pulse'>
                   <img src='img/boc.jpeg' />
                 </div>
               </Link>

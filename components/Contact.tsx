@@ -54,10 +54,10 @@ function Contact() {
   }
 
   return (
-    <div id='contact' className='bodyItemWrapper pt-16'>
+    <div id='contact' className='bodyItemWrapper'>
       <SectionHeader title='Contact' />
-      <div className='bodyItemContent flex-col pt-16'>
-        <form onSubmit={sendMessage} className='py-5 space-y-5 flex flex-col'>
+      <div className='bodyItemContent flex-col'>
+        <form onSubmit={sendMessage} className='space-y-5 flex flex-col'>
           <input
             value={name}
             className='px-4 py-2 rounded focus:outline-none text-black'
