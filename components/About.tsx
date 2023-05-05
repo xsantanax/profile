@@ -38,7 +38,7 @@ function About() {
             </div>
           </div>
         </div>
-        <img src='img/me.jpg' className='h-64 w-64 object-cover ml-14' />
+        <img src='img/fotocut75.jpg' className='h-64 w-64 object-cover ml-14' />
       </div>
     </div>
   )
