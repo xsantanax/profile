@@ -10,7 +10,7 @@ export default function Experience() {
         <div className='flex gap-16 flex-col'>
           <div className='flex gap-12 mb-4'>
             <Link href='https://sort.xyz' target='_blank'>
-              <div className='w-48 h-48 bg-white p-[12px] rounded-[1px] flex items-center hover:animate-pulse'>
+              <div className='w-48 h-48 bg-white p-[12px] rounded-[10px] flex items-center hover:animate-pulse'>
                 <Image
                   alt='sort'
                   src='/img/sort.png'
@@ -44,7 +44,7 @@ export default function Experience() {
             </div>
 
             <Link href='https://highlinefast.com' target='_blank'>
-              <div className='w-48 h-48 bg-white p-[12px] rounded-[1px] flex items-center hover:animate-pulse'>
+              <div className='w-48 h-48 bg-white p-[12px] rounded-[10px] flex items-center hover:animate-pulse'>
                 <Image
                   alt='highline'
                   src='/img/highline.webp'
@@ -57,7 +57,7 @@ export default function Experience() {
 
           <div className='flex gap-12 mb-4'>
             <Link href='https://bucketofcrabs.net' target='_blank'>
-              <div className='w-48 h-48 bg-white p-[12px] rounded-[1px] flex items-center hover:animate-pulse'>
+              <div className='w-48 h-48 bg-white p-[12px] rounded-[10px] flex items-center hover:animate-pulse'>
                 <Image alt='boc' src='/img/boc.jpeg' width={288} height={288} />
               </div>
             </Link>
