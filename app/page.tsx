@@ -6,12 +6,12 @@ import Footer from '../components/Footer'
 
 export default function HomePage() {
   return (
-    <div className=' text-[#ddd] flex flex-col items-center justify-center'>
+    <>
       <Home />
       <About />
       <Experience />
       <Contact />
       <Footer />
-    </div>
+    </>
   )
 }

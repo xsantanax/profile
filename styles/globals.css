@@ -7,7 +7,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply bg-[#012038];
+    @apply bg-[#012038] text-[#ddd];
   }
   .headerItem {
     @apply w-52 min-w-[40px] text-center cursor-pointer text-[#eee] hover:animate-pulse;
