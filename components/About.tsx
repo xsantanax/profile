@@ -23,7 +23,7 @@ function About() {
           <div className='mt-6'>
             Here are a few technologies I’ve been working with recently:
           </div>
-          <div className='flex mt-4'>
+          <div className='flex mt-5'>
             <div className='flex flex-col w-[50%]'>
               <div>Typescript</div>
               <div>React</div>
