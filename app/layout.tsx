@@ -5,6 +5,7 @@ import '../styles/globals.css'
 // import ClientProvider from '../components/ClientProvider'
 // import Login from '../components/Login'
 import Header from '../components/Header'
+import HeaderMobile from '../components/HeaderMobile'
 import { Toaster } from 'react-hot-toast'
 
 export default async function RootLayout({
@@ -24,7 +25,12 @@ export default async function RootLayout({
             <Login />
           ) : ( */}
         <div className='flex flex-col'>
-          <Header />
+          <div className='md:hidden'>
+            <HeaderMobile />
+          </div>
+          <div className='hidden md:block'>
+            <Header />
+          </div>
           {/* <div className='flex mt-16'> */}
           {/* <ClientProvider /> */}
           {children}
