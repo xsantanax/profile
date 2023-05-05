@@ -2,6 +2,7 @@
 import { FormEvent, useState } from 'react'
 import { useCollection } from 'react-firebase-hooks/firestore'
 import { PaperAirplaneIcon } from '@heroicons/react/24/solid'
+import { toast } from 'react-hot-toast'
 
 import {
   collection,
@@ -24,7 +25,10 @@ function Contact() {
 
   const sendMessage = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    if (!text) return
+    if (!text) {
+      toast.error('Empty message')
+      return
+    }
 
     const message: Message = {
       name,
@@ -40,6 +44,8 @@ function Contact() {
       // }
     }
 
+    const notification = toast.loading('Sending message...')
+
     await addDoc(
       collection(
         db,
@@ -50,7 +56,9 @@ function Contact() {
         'messages'
       ),
       message
-    )
+    ).then(() => {
+      toast.success('Message sent!', { id: notification })
+    })
   }
 
   return (
@@ -90,14 +98,14 @@ function Contact() {
           </button>
         </form>
 
-        {messages?.docs.map((message) => (
+        {/* {messages?.docs.map((message) => (
           <div
             key={message.id}
             className='flex  items-center space-x-4 p-5 border-b border-gray-200 hover:bg-gray-100 cursor-pointer'
           >
             {message.data().text}
           </div>
-        ))}
+        ))} */}
       </div>
     </div>
   )

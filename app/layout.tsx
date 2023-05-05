@@ -5,6 +5,7 @@ import '../styles/globals.css'
 // import ClientProvider from '../components/ClientProvider'
 // import Login from '../components/Login'
 import Header from '../components/Header'
+import { Toaster } from 'react-hot-toast'
 
 export default async function RootLayout({
   children
@@ -17,6 +18,7 @@ export default async function RootLayout({
     <html>
       <head />
       <body>
+        <Toaster position='top-right' />
         {/* <SessionProvider session={session}>
           {!session ? (
             <Login />
