@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 function About() {
   return (
-    <div id='about' className='bodyItemWrapper '>
+    <div id='about' className='bodyItemWrapper'>
       <SectionHeader title='About' />
       <div className='bodyItemContent'>
         <div className='flex flex-col '>
@@ -41,7 +41,7 @@ function About() {
         <Image
           alt='me'
           src='/img/fotocut70.jpg'
-          className='object-cover ml-12 h-72'
+          className='object-cover h-72'
           width={200}
           height={288}
         />

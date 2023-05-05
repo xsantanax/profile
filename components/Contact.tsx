@@ -65,7 +65,7 @@ function Contact() {
     <div id='contact' className='bodyItemWrapper'>
       <SectionHeader title='Contact' />
       <div className='bodyItemContent flex-col'>
-        <form onSubmit={sendMessage} className='space-y-5 flex flex-col'>
+        <form onSubmit={sendMessage} className='gap-5 flex flex-col w-full'>
           <input
             value={name}
             className='px-4 py-2 rounded focus:outline-none text-black'

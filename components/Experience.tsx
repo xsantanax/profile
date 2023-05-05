@@ -8,7 +8,7 @@ export default function Experience() {
       <SectionHeader title='Experience' />
       <div className='bodyItemContent'>
         <div className='flex gap-16 flex-col'>
-          <div className='flex gap-12 mb-4'>
+          <div className='flex gap-6 md:gap-12 mb-4 flex-col md:flex-row items-center text-center'>
             <Link href='https://sort.xyz' target='_blank'>
               <div className='w-48 h-48 bg-white p-[12px] rounded-[8px] flex items-center hover:animate-pulse'>
                 <Image
@@ -19,7 +19,7 @@ export default function Experience() {
                 />
               </div>
             </Link>
-            <div className='py-2 flex flex-col justify-center'>
+            <div className='py-2 flex flex-col justify-center md:text-left'>
               <div className='font-bold text-[17px] mb-2 underline tracking-[0.5px] cursor-pointer'>
                 Sort
               </div>
@@ -32,8 +32,8 @@ export default function Experience() {
             </div>
           </div>
 
-          <div className='flex gap-12 mb-4'>
-            <div className='py-2 flex flex-col justify-center text-right '>
+          <div className='flex gap-6 md:gap-12 mb-4 flex-col-reverse md:flex-row items-center'>
+            <div className='py-2 flex flex-col justify-center md:text-right text-center'>
               <div className='font-bold text-[17px] mb-2 underline tracking-[0.5px] cursor-pointer'>
                 HighlineFast
               </div>
@@ -55,13 +55,13 @@ export default function Experience() {
             </Link>
           </div>
 
-          <div className='flex gap-12 mb-4'>
+          <div className='flex gap-6 md:gap-12 mb-4 flex-col md:flex-row items-center text-center'>
             <Link href='https://bucketofcrabs.net' target='_blank'>
               <div className='w-48 h-48 bg-white p-[12px] rounded-[8px] flex items-center hover:animate-pulse'>
                 <Image alt='boc' src='/img/boc.jpeg' width={288} height={288} />
               </div>
             </Link>
-            <div className='py-2 flex flex-col justify-center '>
+            <div className='py-2 flex flex-col justify-center md:text-left'>
               <div className='font-bold text-[17px] mb-2 underline tracking-[0.5px] cursor-pointer'>
                 Bucket of Crabs
               </div>
