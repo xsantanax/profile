@@ -15,7 +15,7 @@ export default function Experience() {
             </Link>
             <div className='py-2 flex flex-col justify-center'>
               <div className='font-bold text-[17px] mb-2 underline tracking-[0.5px] cursor-pointer'>
-                Sort.xyz
+                Sort
               </div>
               Sort is a web app developed to enable easy and fast querying of
               data on the Ethereum ecossystem. Using blockchain technologies,
@@ -60,6 +60,11 @@ export default function Experience() {
               ones they like.
             </div>
           </div>
+          <Link href='https://github.com/xsantanax' target='_blank'>
+            <div className='text-right text-blue-400 mt-[-42px] underline'>
+              ... and more!
+            </div>
+          </Link>
         </div>
       </div>
     </div>
