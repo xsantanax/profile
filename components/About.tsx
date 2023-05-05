@@ -1,4 +1,5 @@
 import SectionHeader from '../components/SectionHeader'
+import Image from 'next/image'
 
 function About() {
   return (
@@ -37,7 +38,13 @@ function About() {
             </div>
           </div>
         </div>
-        <img src='img/fotocut70.jpg' className='h-64 w-64 object-cover ml-14' />
+        <Image
+          alt='me'
+          src='/img/fotocut70.jpg'
+          className='object-cover ml-12 h-72'
+          width={200}
+          height={288}
+        />
       </div>
     </div>
   )

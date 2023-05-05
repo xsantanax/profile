@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import SectionHeader from './SectionHeader'
 
@@ -10,7 +11,12 @@ export default function Experience() {
           <div className='flex gap-12 mb-4'>
             <Link href='https://sort.xyz' target='_blank'>
               <div className='w-48 h-48 bg-white p-[12px] rounded-[24px] flex items-center hover:animate-pulse'>
-                <img src='img/sort.png' />
+                <Image
+                  alt='sort'
+                  src='/img/sort.png'
+                  width={192}
+                  height={192}
+                />
               </div>
             </Link>
             <div className='py-2 flex flex-col justify-center'>
@@ -39,7 +45,12 @@ export default function Experience() {
 
             <Link href='https://highlinefast.com' target='_blank'>
               <div className='w-48 h-48 bg-white p-[12px] rounded-[24px] flex items-center hover:animate-pulse'>
-                <img src='img/highline.webp' />
+                <Image
+                  alt='highline'
+                  src='/img/highline.webp'
+                  width={288}
+                  height={288}
+                />
               </div>
             </Link>
           </div>
@@ -47,7 +58,7 @@ export default function Experience() {
           <div className='flex gap-12 mb-4'>
             <Link href='https://bucketofcrabs.net' target='_blank'>
               <div className='w-48 h-48 bg-white p-[12px] rounded-[24px] flex items-center hover:animate-pulse'>
-                <img src='img/boc.jpeg' />
+                <Image alt='boc' src='/img/boc.jpeg' width={288} height={288} />
               </div>
             </Link>
             <div className='py-2 flex flex-col justify-center '>
