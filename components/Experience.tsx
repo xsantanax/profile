@@ -7,10 +7,10 @@ export default function Experience() {
     <div id='experience' className='bodyItemWrapper bg-[#00132E]'>
       <SectionHeader title='Experience' />
       <div className='bodyItemContent'>
-        <div className='flex gap-16 flex-col'>
-          <div className='flex gap-6 md:gap-12 mb-4 flex-col md:flex-row items-center text-center'>
+        <div className='col gap-16 text-center'>
+          <div className='experienceWrap'>
             <Link href='https://sort.xyz' target='_blank'>
-              <div className='w-48 h-48 bg-white p-[12px] rounded-[8px] flex items-center hover:animate-pulse'>
+              <div className='experienceImageWrap'>
                 <Image
                   alt='sort'
                   src='/img/sort.png'
@@ -19,10 +19,8 @@ export default function Experience() {
                 />
               </div>
             </Link>
-            <div className='py-2 flex flex-col justify-center md:text-left'>
-              <div className='font-bold text-[17px] mb-2 underline tracking-[0.5px] cursor-pointer'>
-                Sort
-              </div>
+            <div className='experienceTextWrap md:text-left'>
+              <div className='experienceTitle'>Sort</div>
               Sort is a web app developed to enable easy and fast querying of
               data on the Ethereum ecossystem. Using blockchain technologies,
               the platform enables the user to login using their Ethereum wallet
@@ -32,11 +30,9 @@ export default function Experience() {
             </div>
           </div>
 
-          <div className='flex gap-6 md:gap-12 mb-4 flex-col-reverse md:flex-row items-center'>
-            <div className='py-2 flex flex-col justify-center md:text-right text-center'>
-              <div className='font-bold text-[17px] mb-2 underline tracking-[0.5px] cursor-pointer'>
-                HighlineFast
-              </div>
+          <div className='experienceWrap flex-col-reverse md:flex-row'>
+            <div className='experienceTextWrap md:text-right'>
+              <div className='experienceTitle'>HighlineFast</div>
               HighlineFast is an internet provider company, which the website
               was developed for. Its purpose is to allow new prospects to know
               more about their product, check for its availability in their
@@ -44,7 +40,7 @@ export default function Experience() {
             </div>
 
             <Link href='https://highlinefast.com' target='_blank'>
-              <div className='w-48 h-48 bg-white p-[12px] rounded-[8px] flex items-center hover:animate-pulse'>
+              <div className='experienceImageWrap'>
                 <Image
                   alt='highline'
                   src='/img/highline.webp'
@@ -55,16 +51,14 @@ export default function Experience() {
             </Link>
           </div>
 
-          <div className='flex gap-6 md:gap-12 mb-4 flex-col md:flex-row items-center text-center'>
+          <div className='experienceWrap'>
             <Link href='https://bucketofcrabs.net' target='_blank'>
-              <div className='w-48 h-48 bg-white p-[12px] rounded-[8px] flex items-center hover:animate-pulse'>
+              <div className='experienceImageWrap'>
                 <Image alt='boc' src='/img/boc.jpeg' width={288} height={288} />
               </div>
             </Link>
-            <div className='py-2 flex flex-col justify-center md:text-left'>
-              <div className='font-bold text-[17px] mb-2 underline tracking-[0.5px] cursor-pointer'>
-                Bucket of Crabs
-              </div>
+            <div className='experienceTextWrap md:text-left'>
+              <div className='experienceTitle'>Bucket of Crabs</div>
               Bucket of Crabs is a company that matches Minecraft developers
               with Minecraft studios. The website purpose is to allow studios to
               post jobs and allow developers to browse these jobs and apply to

@@ -6,7 +6,7 @@ function About() {
     <div id='about' className='bodyItemWrapper'>
       <SectionHeader title='About' />
       <div className='bodyItemContent'>
-        <div className='flex flex-col '>
+        <div className='col'>
           <div>
             Hello! My name is Rafael and I am a software engineer who loves
             building the internet. My interest in app development started back
@@ -22,8 +22,8 @@ function About() {
           <div className='mt-6'>
             Here are a few technologies I’ve been working with recently:
           </div>
-          <div className='flex mt-5'>
-            <div className='flex flex-col w-[64%]'>
+          <div className='flex mt-6'>
+            <div className='col w-[64%]'>
               <div>Javascript</div>
               <div>Typescript</div>
               <div>React</div>
@@ -32,7 +32,7 @@ function About() {
               <div>Tailwind CSS</div>
               <div>Styled Components</div>
             </div>
-            <div className='flex flex-col w-[36%]'>
+            <div className='col w-[36%]'>
               <div>Node.js</div>
               <div>Firebase</div>
               <div>MongoDB</div>
