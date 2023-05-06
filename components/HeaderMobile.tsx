@@ -20,10 +20,8 @@ function HeaderMobile() {
     <>
       <div
         className={`fixed h-16 w-full px-16 flex items-center z-10
-                      ${
-                        isAtTop ? 'border-b-[0.5px] border-[#ddd]' : 'bg-[#111]'
-                      }
-                  `}
+            ${isAtTop ? 'border-b-[0.5px] border-[#ddd]' : 'bg-[#111]'}
+        `}
       >
         <div
           className='cursor-pointer min-w-[240px] text-left animate-pulse'

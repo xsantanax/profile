@@ -7,7 +7,7 @@ export default function Experience() {
     <div id='experience' className='bodyItemWrapper bg-[#00132E]'>
       <SectionHeader title='Experience' />
       <div className='bodyItemContent'>
-        <div className='col gap-16 text-center'>
+        <div className='col gap-16 text-center pt-2'>
           <Link href='https://sort.xyz' target='_blank'>
             <div className='experienceWrap'>
               <div className='experienceImageWrap'>
