@@ -5,7 +5,7 @@ function About() {
   return (
     <div id='about' className='bodyItemWrapper'>
       <SectionHeader title='About' />
-      <div className='bodyItemContent'>
+      <div className='bodyItemContent flex-col-reverse md:flex-row'>
         <div className='col'>
           <div>
             Hello! My name is Rafael and I am a software engineer who loves
