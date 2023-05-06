@@ -90,7 +90,7 @@ function Contact() {
           <button
             type='submit'
             // disabled={!name || !email || !text}
-            className='bg-[#11A37F] flex justify-center text-white font-bold px-4 py-2 rounded hover:opacity-50 duration-200
+            className='bg-[#11A37F] flex justify-center text-white font-bold px-4 py-2 rounded hover:opacity-50 duration-150
                        disabled:cursor-not-allowed disabled:bg-gray-300 '
           >
             <div>Send</div>
