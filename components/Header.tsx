@@ -15,7 +15,7 @@ function Header() {
 
   return (
     <div
-      className={`fixed space-x-8 h-[72px] w-full px-10 flex items-center z-10 border-b-[0.5px] border-[#ddd] duration-150
+      className={`fixed h-[72px] w-full px-16 flex items-center justify-center z-10 border-b-[0.5px] border-[#ddd] duration-150
                     ${
                       !isAtTop &&
                       // ? 'border-b-[0.5px] border-[#ddd]'
@@ -24,52 +24,54 @@ function Header() {
                     }
                 `}
     >
-      <div
-        className='cursor-pointer min-w-[240px] text-center animate-pulse'
-        // style={{ cursor: 'url(/dollar.png),auto' }}
-        onClick={() => {
-          window.location.href = '#'
-        }}
-      >
-        Rafael Santana
-      </div>
+      <div className={`space-x-8 w-full max-w-[1560px] flex items-center`}>
+        <div
+          className='cursor-pointer min-w-[180px] text-left animate-pulse'
+          // style={{ cursor: 'url(/dollar.png),auto' }}
+          onClick={() => {
+            window.location.href = '#'
+          }}
+        >
+          Rafael Santana
+        </div>
 
-      <div className='w-[20%]' />
+        <div className='flex-1' />
 
-      <div
-        className='headerItem'
-        onClick={() => {
-          window.location.href = '#'
-        }}
-      >
-        Home
-      </div>
+        <div
+          className='headerItem'
+          onClick={() => {
+            window.location.href = '#'
+          }}
+        >
+          Home
+        </div>
 
-      <div
-        className='headerItem'
-        onClick={() => {
-          window.location.href = '#about'
-        }}
-      >
-        About
-      </div>
+        <div
+          className='headerItem'
+          onClick={() => {
+            window.location.href = '#about'
+          }}
+        >
+          About
+        </div>
 
-      <div
-        className='headerItem'
-        onClick={() => {
-          window.location.href = '#experience'
-        }}
-      >
-        Experience
-      </div>
+        <div
+          className='headerItem'
+          onClick={() => {
+            window.location.href = '#experience'
+          }}
+        >
+          Experience
+        </div>
 
-      <div
-        className='headerItem'
-        onClick={() => {
-          window.location.href = '#contact'
-        }}
-      >
-        Contact
+        <div
+          className='headerItem'
+          onClick={() => {
+            window.location.href = '#contact'
+          }}
+        >
+          Contact
+        </div>
       </div>
     </div>
   )

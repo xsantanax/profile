@@ -13,7 +13,7 @@
     @apply flex flex-col;
   }
   .headerItem {
-    @apply w-52 min-w-[40px] text-center cursor-pointer hover:animate-pulse;
+    @apply w-48 min-w-[36px] text-right cursor-pointer hover:animate-pulse;
   }
   .bodyItemWrapper {
     @apply col w-full items-center justify-center px-12 py-[120px] md:py-[160px];
