@@ -64,11 +64,11 @@ function Contact() {
   return (
     <div id='contact' className='bodyItemWrapper'>
       <SectionHeader title='Contact' />
-      <div className='bodyItemContent flex-col'>
-        <form onSubmit={sendMessage} className='gap-5 flex flex-col w-full'>
+      <div className='bodyItemContent'>
+        <form onSubmit={sendMessage} className='gap-5 col w-full'>
           <input
             value={name}
-            className='px-4 py-2 rounded focus:outline-none text-black'
+            className='input'
             type='text'
             placeholder='Your name'
             onChange={(e) => setName(e.target.value)}
@@ -76,22 +76,22 @@ function Contact() {
 
           <input
             value={email}
-            className='px-4 py-2 rounded focus:outline-none text-black'
+            className='input'
             type='text'
             placeholder='Your email'
             onChange={(e) => setEmail(e.target.value)}
           />
           <textarea
             value={text}
-            className='px-4 py-2 h-[160px] rounded focus:outline-none text-black'
+            className='input h-[160px]'
             placeholder='Type your message here...'
             onChange={(e) => setText(e.target.value)}
           />
           <button
             type='submit'
             // disabled={!name || !email || !text}
-            className='bg-[#11A37F] hover:opacity-50 text-white font-bold px-4 py-2 rounded
-          disabled:cursor-not-allowed disabled:bg-gray-300 flex justify-center'
+            className='bg-[#11A37F] flex justify-center text-white font-bold px-4 py-2 rounded hover:opacity-50 duration-200
+                       disabled:cursor-not-allowed disabled:bg-gray-300 '
           >
             <div>Send</div>
             <PaperAirplaneIcon className='h-4 w-4 -rotate-45 mt-[3px] ml-3' />
