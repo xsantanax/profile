@@ -4,7 +4,7 @@ import SectionHeader from './SectionHeader'
 
 export default function Experience() {
   return (
-    <div id='experience' className='bodyItemWrapper bg-[#00132E]'>
+    <div id='experience' className='bodyItemWrapper bg-[#020618]'>
       <SectionHeader title='Experience' />
       <div className='bodyItemContent'>
         <div className='col gap-16 text-center pt-2'>

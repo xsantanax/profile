@@ -7,7 +7,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply bg-[#012038] text-[#ddd] text-[17px];
+    @apply bg-[#040f24] text-[#ddd] text-[17px];
   }
   .col {
     @apply flex flex-col;
