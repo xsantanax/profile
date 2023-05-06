@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import HeaderMenu from './HeaderMenu'
+import { Bars3Icon } from '@heroicons/react/24/outline'
 
 function HeaderMobile() {
   const [isAtTop, setIsAtTop] = useState(true)
@@ -36,7 +37,8 @@ function HeaderMobile() {
           className='cursor-pointer text-[#d0d0d0]'
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          Menu
+          {/* Menu */}
+          <Bars3Icon width={28} />
         </div>
       </div>
       {isMenuOpen && (
