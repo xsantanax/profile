@@ -15,12 +15,12 @@ function Header() {
 
   return (
     <div
-      className={`fixed space-x-8 h-16 w-full px-10 flex justify-center items-center z-10 transition-opacity-ease-in-out duration-200
-    ${isAtTop ? 'border-b-[0.5px] border-[#eee]' : 'bg-[#111]'}
-    `}
+      className={`fixed space-x-8 h-16 w-full px-10 flex items-center z-10 
+                    ${isAtTop ? 'border-b-[0.5px] border-[#ddd]' : 'bg-[#111]'}
+                `}
     >
       <div
-        className='cursor-pointer min-w-[240px] text-[#eee] text-center animate-pulse'
+        className='cursor-pointer min-w-[240px] text-center animate-pulse'
         // style={{ cursor: 'url(/dollar.png),auto' }}
         onClick={() => {
           window.location.href = '#'

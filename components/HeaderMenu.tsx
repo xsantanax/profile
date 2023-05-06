@@ -2,7 +2,7 @@ import React from 'react'
 
 function HeaderMenu({ closeMenu }: { closeMenu: any }) {
   return (
-    <div className='flex flex-col items-center pt-48 w-full h-full gap-8'>
+    <div className='col items-center pt-48 w-full h-full gap-8'>
       <div
         className='headerItem'
         onClick={() => {
