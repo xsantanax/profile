@@ -15,7 +15,7 @@ function Header() {
 
   return (
     <div
-      className={`fixed space-x-8 h-[72px] w-full px-10 flex items-center z-10 text-[17px] font-[500] tracking-[0.5px]
+      className={`fixed space-x-8 h-[72px] w-full px-10 flex items-center z-10 font-[400] tracking-[0.5px]
                     ${isAtTop ? 'border-b-[0.5px] border-[#ddd]' : 'bg-[#111]'}
                 `}
     >
