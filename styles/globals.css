@@ -7,7 +7,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply bg-[#012038] text-[#ddd] text-[18px];
+    @apply bg-[#012038] text-[#ddd] text-[17px];
   }
   .col {
     @apply flex flex-col;
@@ -22,7 +22,7 @@
     @apply flex w-full items-center md:items-start pt-[80px] gap-16 md:w-[900px] md:px-16;
   }
   .experienceTitle {
-    @apply font-[700] text-[19px] mb-2 underline tracking-[0.6px] cursor-pointer;
+    @apply font-[700] text-[18px] mb-2 underline tracking-[0.5px] cursor-pointer;
   }
   .experienceWrap {
     @apply col gap-6 mb-4 items-center md:flex-row md:gap-12;
