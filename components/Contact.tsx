@@ -64,7 +64,7 @@ function Contact() {
   return (
     <div id='contact' className='bodyItemWrapper'>
       <SectionHeader title='Contact' />
-      <div className='bodyItemContent col items-center'>
+      <div className='bodyItemContent col items-center text-center'>
         <div className='text-[20px] mt-[20px]'>
           Want to build your own stunning project?
         </div>

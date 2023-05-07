@@ -16,12 +16,7 @@ function Header() {
   return (
     <div
       className={`fixed h-[72px] w-full px-16 flex items-center justify-center z-10 border-b-[0.5px] border-[#ddd] duration-150
-                    ${
-                      !isAtTop &&
-                      // ? 'border-b-[0.5px] border-[#ddd]'
-                      // :
-                      'bg-[#040404] border-b-0'
-                    }
+                    ${!isAtTop && 'bg-[#020202]'}
                 `}
     >
       <div className={`space-x-8 w-full max-w-[1560px] flex items-center`}>
