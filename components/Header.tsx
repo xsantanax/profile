@@ -20,7 +20,7 @@ function Header() {
                       !isAtTop &&
                       // ? 'border-b-[0.5px] border-[#ddd]'
                       // :
-                      'bg-[#080808] border-b-0'
+                      'bg-[#060606] border-b-0'
                     }
                 `}
     >
