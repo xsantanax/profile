@@ -64,7 +64,13 @@ function Contact() {
   return (
     <div id='contact' className='bodyItemWrapper'>
       <SectionHeader title='Contact' />
-      <div className='bodyItemContent'>
+      <div className='bodyItemContent col items-center'>
+        <div className='text-[20px] mt-[20px]'>
+          Want to build your own stunning project?
+        </div>
+        <div className='font-[600] text-[20px] -mt-[10px] mb-[40px]'>
+          Message me.
+        </div>
         <form onSubmit={sendMessage} className='gap-5 col w-full'>
           <input
             value={name}
@@ -97,7 +103,6 @@ function Contact() {
             <PaperAirplaneIcon className='h-4 w-4 -rotate-45 mt-[3px] ml-3' />
           </button>
         </form>
-
         {/* {messages?.docs.map((message) => (
           <div
             key={message.id}
