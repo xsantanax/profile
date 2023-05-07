@@ -45,7 +45,7 @@ function About() {
         </div>
         <Image
           alt='me'
-          src='/img/fotocut70.jpg'
+          src='/img/foto.jpg'
           className='object-cover h-72'
           width={200}
           height={288}
