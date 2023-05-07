@@ -19,8 +19,8 @@ function HeaderMobile() {
   return (
     <>
       <div
-        className={`fixed h-16 w-full px-8 md:px-16 flex items-center z-10 border-b-[0.5px] border-[#ddd] duration-150
-            ${!isAtTop && 'bg-[#020202]'}
+        className={`fixed h-16 w-full px-8 md:px-16 flex items-center z-10 border-b-[1px] border-[#ddd] duration-150
+            ${!isAtTop && 'bg-[#040404]'}
         `}
       >
         <div
