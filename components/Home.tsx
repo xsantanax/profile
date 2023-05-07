@@ -7,7 +7,7 @@ export default function Home() {
     >
       <div className='max-w-[1560px] w-full '>
         <div className='pt-[108px] md:pt-[128px] '>Hi, I am</div>
-        <div className='py-[18px] text-[52px] md:text-[60px] font-bold leading-[1.1] '>
+        <div className='py-[20px] text-[52px] md:text-[60px] font-bold leading-[1.1] '>
           Rafael Santana
         </div>
         <div>
