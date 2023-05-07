@@ -7,10 +7,10 @@ export default function Home() {
     >
       <div className='max-w-[1560px] w-full'>
         <div className='pt-[112px] md:pt-[128px]'>Hi, I am</div>
-        <div className='pt-[10px] text-[52px] md:text-[60px] font-bold leading-tight'>
+        <div className='py-[20px] text-[52px] md:text-[60px] font-bold leading-tight'>
           Rafael Santana
         </div>
-        <div className='pt-[10px]'>
+        <div>
           A software engineer specialized in building amazing digital
           experiences.
         </div>
