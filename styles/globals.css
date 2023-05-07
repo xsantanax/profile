@@ -7,7 +7,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply bg-[#040f24] text-[#ddd] text-[17px];
+    @apply bg-[#040f24] text-[#ddd] text-[18px];
   }
   .col {
     @apply flex flex-col;
@@ -16,13 +16,13 @@
     @apply w-48 min-w-[36px] text-right cursor-pointer hover:animate-pulse;
   }
   .bodyItemWrapper {
-    @apply col w-full items-center justify-center px-12 py-[120px] md:py-[160px];
+    @apply col w-full items-center justify-center px-8 md:px-12 py-[120px] md:py-[160px];
   }
   .bodyItemContent {
-    @apply flex w-full items-center md:items-start pt-[80px] gap-16 md:w-[900px] md:px-16;
+    @apply flex w-full items-center md:items-start pt-[80px] gap-12 md:w-[900px] md:px-16;
   }
   .experienceTitle {
-    @apply font-[700] text-[18px] mb-2 underline tracking-[0.5px] cursor-pointer;
+    @apply font-[700] mb-[9px] underline tracking-[0.5px] cursor-pointer;
   }
   .experienceWrap {
     @apply col gap-6 mb-4 items-center md:flex-row md:gap-12;

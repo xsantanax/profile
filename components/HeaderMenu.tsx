@@ -4,7 +4,7 @@ function HeaderMenu({ closeMenu }: { closeMenu: any }) {
   return (
     <div className='col items-center pt-48 w-full h-full gap-8'>
       <div
-        className='headerItem'
+        className='headerItem text-center'
         onClick={() => {
           window.location.href = '#'
           closeMenu()
@@ -14,7 +14,7 @@ function HeaderMenu({ closeMenu }: { closeMenu: any }) {
       </div>
 
       <div
-        className='headerItem'
+        className='headerItem text-center'
         onClick={() => {
           window.location.href = '#about'
           closeMenu()
@@ -24,7 +24,7 @@ function HeaderMenu({ closeMenu }: { closeMenu: any }) {
       </div>
 
       <div
-        className='headerItem'
+        className='headerItem text-center'
         onClick={() => {
           window.location.href = '#experience'
           closeMenu()
@@ -34,7 +34,7 @@ function HeaderMenu({ closeMenu }: { closeMenu: any }) {
       </div>
 
       <div
-        className='headerItem'
+        className='headerItem text-center'
         onClick={() => {
           window.location.href = '#contact'
           closeMenu()

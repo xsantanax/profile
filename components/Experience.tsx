@@ -105,7 +105,7 @@ export default function Experience() {
           </Link>
 
           <Link href='https://github.com/xsantanax' target='_blank'>
-            <div className='text-right text-blue-400 mt-[-42px] underline'>
+            <div className='text-right text-blue-600 mt-[-42px] underline'>
               ... and more!
             </div>
           </Link>
