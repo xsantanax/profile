@@ -7,7 +7,7 @@ export default function Experience() {
     <div id='experience' className='bodyItemWrapper bg-[#030918]'>
       <SectionHeader title='Experience' />
       <div className='bodyItemContent'>
-        <div className='col gap-16 text-center pt-2'>
+        <div className='col gap-24 text-center pt-2'>
           <Link href='https://sort.xyz' target='_blank'>
             <div className='experienceWrap'>
               <div className='experienceImageWrap'>
@@ -29,7 +29,6 @@ export default function Experience() {
               </div>
             </div>
           </Link>
-
           <Link href='https://highlinefast.com' target='_blank'>
             <div className='experienceWrap flex-col-reverse md:flex-row'>
               <div className='experienceTextWrap md:text-right'>
@@ -50,7 +49,6 @@ export default function Experience() {
               </div>
             </div>
           </Link>
-
           <Link href='https://bucketofcrabs.net' target='_blank'>
             <div className='experienceWrap'>
               <div className='experienceImageWrap'>
@@ -59,9 +57,49 @@ export default function Experience() {
               <div className='experienceTextWrap md:text-left'>
                 <div className='experienceTitle'>Bucket of Crabs</div>
                 Bucket of Crabs is a company that matches Minecraft developers
-                with Minecraft studios. The website purpose is to allow studios
+                with Minecraft studios. This website purpose is to allow studios
                 to post jobs and allow developers to browse these jobs and apply
                 to ones they like.
+              </div>
+            </div>
+          </Link>
+          <Link href='https://womenbelong.com' target='_blank'>
+            <div className='experienceWrap flex-col-reverse md:flex-row'>
+              <div className='experienceTextWrap md:text-right'>
+                <div className='experienceTitle'>Women Belong</div>
+                Women Belong is a membership organization with the goal of
+                connecting a diverse group of working women at all stages and
+                levels of their career. The website purpose it to communicate
+                with members and showcase the group events and benefits to
+                prospect members.
+              </div>
+
+              <div className='experienceImageWrap'>
+                <Image
+                  alt='womenbelong'
+                  src='/img/womenbelong.png'
+                  width={288}
+                  height={288}
+                />
+              </div>
+            </div>
+          </Link>
+          <Link href='https://bannerwave.com' target='_blank'>
+            <div className='experienceWrap'>
+              <div className='experienceImageWrap'>
+                <Image
+                  alt='bannerwave'
+                  src='/img/bannerwave.jpg'
+                  width={288}
+                  height={288}
+                />
+              </div>
+              <div className='experienceTextWrap md:text-left'>
+                <div className='experienceTitle'>Bannerwave</div>
+                Bannerwave is a digital ads' company which provides services to
+                many other companies. This website was developed to showcase
+                their portfolio and invite prospect clients to get in touch and
+                talk about future business.
               </div>
             </div>
           </Link>
