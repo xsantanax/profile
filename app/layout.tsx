@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import Header from '../components/Header'
 import HeaderMobile from '../components/HeaderMobile'
+import Footer from '../components/Footer'
 import { Toaster } from 'react-hot-toast'
 
 export default async function RootLayout({
@@ -20,6 +21,7 @@ export default async function RootLayout({
           <Header />
         </div>
         {children}
+        <Footer />
       </body>
     </html>
   )
