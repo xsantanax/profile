@@ -12,7 +12,7 @@ export default async function RootLayout({
 }) {
   return (
     <html>
-      {/* <head /> */}
+      <head />
       <GoogleTagManager gtmId="GTM-NN4TM9JT" />
       <body>
         <Toaster position="top-right" />
