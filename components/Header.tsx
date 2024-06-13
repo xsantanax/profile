@@ -21,13 +21,13 @@ function Header() {
     >
       <div className={`space-x-8 w-full max-w-[1560px] flex items-center`}>
         <div
-          className='cursor-pointer min-w-[180px] text-left animate-pulse'
+          className='cursor-pointer min-w-[180px] text-left font-bold'
           // style={{ cursor: 'url(/dollar.png),auto' }}
           onClick={() => {
             window.location.href = '#'
           }}
         >
-          Rafael Santana
+          Rafael
         </div>
 
         <div className='flex-1' />
