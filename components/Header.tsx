@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 
 function Header() {
-  const [isAtTop, setIsAtTop] = useState(true)
+  const [isAtTop, setIsAtTop] = useState(!window.pageYOffset)
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
