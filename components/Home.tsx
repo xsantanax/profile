@@ -10,14 +10,16 @@ export default function Home() {
     img.onload = () => setIsLoaded(true)
   }, [])
   return (
-    <div
-      id='/'
-      style={{ backgroundImage: 'url(img/nightcity.jpg)' }}
-      className={`bg-center bg-cover h-screen w-full min-h-[766px] px-8 md:px-16 flex justify-center text-shadow-mine shadow-blue-900 ${
-        isLoaded && 'fade-in'
-      }`}
-    >
-      <div className='max-w-[1560px] w-full '>
+    <div className={`h-screen w-full min-h-[766px] relative`}>
+      <div
+        // id='/'
+        style={{ backgroundImage: 'url(img/nightcity.jpg)' }}
+        className={`bg-center bg-cover h-screen w-full min-h-[766px] px-8 md:px-16 flex justify-center text-shadow-mine shadow-blue-900 ${
+          isLoaded ? 'fade-in' : 'hidden'
+        }`}
+      ></div>
+
+      <div className='max-w-[1560px] w-full absolute top-2 ml-16'>
         <div className='pt-[108px] md:pt-[128px] '>Hi, I am</div>
         <div className='py-[20px] text-[52px] md:text-[60px] font-bold leading-[1.1] '>
           Rafael Santana
