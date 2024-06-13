@@ -19,7 +19,7 @@ export default function Home() {
         }`}
       ></div>
 
-      <div className='max-w-[1560px] w-full absolute top-2 ml-16'>
+      <div className='max-w-[1560px] w-full absolute top-2 px-8 md:px-16'>
         <div className='pt-[108px] md:pt-[128px] '>Hi, I am</div>
         <div className='py-[20px] text-[52px] md:text-[60px] font-bold leading-[1.1] '>
           Rafael Santana
