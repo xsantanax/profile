@@ -18,9 +18,9 @@ function HeaderMobile() {
 
   return (
     <>
-      <div
+      <nav
         className={`fixed h-16 w-full px-8 md:px-16 flex items-center z-10 border-b-[1px] border-[#ddd] duration-150
-            ${!isAtTop && 'bg-[#040404]'}
+            ${!isAtTop && 'bg-[#040f24]'}
         `}
       >
         <div
@@ -39,7 +39,7 @@ function HeaderMobile() {
         >
           <Bars3Icon width={28} />
         </div>
-      </div>
+      </nav>
       {isMenuOpen && (
         <div className='fixed h-full w-full mt-[64px] z-10 bg-[#012038]'>
           <HeaderMenu closeMenu={() => setIsMenuOpen(false)} />

@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 
 function Header() {
-  const [isAtTop, setIsAtTop] = useState(true)
+  const [isAtTop, setIsAtTop] = useState(false)
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -14,14 +14,14 @@ function Header() {
   }, [])
 
   return (
-    <div
-      className={`fixed h-[72px] w-full px-16 flex items-center justify-center z-10 border-b-[1px] border-[#ddd] duration-150
-                    ${!isAtTop && 'bg-[#040404]'}
+    <nav
+      className={`fixed h-[72px] w-full px-16 flex items-center justify-center z-10 border-b-[1px] border-[#ddd] duration-150 bg-[#040404] fade-in
+                    ${isAtTop && 'bg-transparent'}
                 `}
     >
       <div className={`space-x-8 w-full max-w-[1560px] flex items-center`}>
         <div
-          className='cursor-pointer min-w-[180px] text-left font-bold'
+          className='cursor-pointer min-w-[180px] text-left font-bold hover:animate-pulse'
           // style={{ cursor: 'url(/dollar.png),auto' }}
           onClick={() => {
             window.location.href = '#'
@@ -68,7 +68,7 @@ function Header() {
           Contact
         </div>
       </div>
-    </div>
+    </nav>
   )
 }
 

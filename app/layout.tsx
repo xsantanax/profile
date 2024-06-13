@@ -1,10 +1,10 @@
-import "../styles/globals.css"
-import Header from "../components/Header"
-import HeaderMobile from "../components/HeaderMobile"
-import Footer from "../components/Footer"
-import { Toaster } from "react-hot-toast"
+import '../styles/globals.css'
+import Header from '../components/Header'
+import HeaderMobile from '../components/HeaderMobile'
+import Footer from '../components/Footer'
+import { Toaster } from 'react-hot-toast'
 // import { GoogleTagManager } from "@next/third-parties/google"
-import Script from "next/script"
+import Script from 'next/script'
 
 export default async function RootLayout({
   children,
@@ -15,8 +15,8 @@ export default async function RootLayout({
     <html>
       <head>
         {/* Google Tag Manager */}
-        {process.env.VERCEL_ENV === "production" && (
-          <Script id="google-tag-manager">
+        {process.env.VERCEL_ENV === 'production' && (
+          <Script id='google-tag-manager'>
             {`
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -30,24 +30,26 @@ export default async function RootLayout({
       {/* <GoogleTagManager gtmId="GTM-NN4TM9JT" /> */}
       <body>
         {/* Google Tag Manager */}
-        {process.env.VERCEL_ENV === "production" && (
+        {process.env.VERCEL_ENV === 'production' && (
           <noscript>
             <iframe
-              src="https://www.googletagmanager.com/ns.html?id=GTM-NN4TM9JT"
-              height="0"
-              width="0"
-              style={{ display: "none", visibility: "hidden" }}
+              src='https://www.googletagmanager.com/ns.html?id=GTM-NN4TM9JT'
+              height='0'
+              width='0'
+              style={{ display: 'none', visibility: 'hidden' }}
             ></iframe>
           </noscript>
         )}
-        <Toaster position="top-right" />
-        <div className="md:hidden">
-          <HeaderMobile />
-        </div>
-        <div className="hidden md:block">
-          <Header />
-        </div>
-        {children}
+        <Toaster position='top-right' />
+        <header>
+          <div className='md:hidden'>
+            <HeaderMobile />
+          </div>
+          <div className='hidden md:block'>
+            <Header />
+          </div>
+        </header>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
