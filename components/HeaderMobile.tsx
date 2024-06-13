@@ -24,7 +24,7 @@ function HeaderMobile() {
         `}
       >
         <div
-          className='cursor-pointer min-w-[240px] text-left animate-pulse'
+          className='cursor-pointer min-w-[240px] text-left'
           // style={{ cursor: 'url(/dollar.png),auto' }}
           onClick={() => {
             window.location.href = '#'
