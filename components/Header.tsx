@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 
 function Header() {
-  const [isAtTop, setIsAtTop] = useState(false)
+  const [isAtTop, setIsAtTop] = useState(true)
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -15,8 +15,8 @@ function Header() {
 
   return (
     <nav
-      className={`fixed h-[72px] w-full px-16 flex items-center justify-center z-10 border-b-[1px] border-[#ddd] duration-150 bg-[#040404] fade-in
-                    ${isAtTop && 'bg-transparent'}
+      className={`fixed h-[72px] w-full px-16 flex items-center justify-center z-10 border-b-[1px] border-[#ddd] duration-150 
+                    ${isAtTop ? 'bg-transparent' : 'bg-[#040404]'}
                 `}
     >
       <div className={`space-x-8 w-full max-w-[1560px] flex items-center`}>

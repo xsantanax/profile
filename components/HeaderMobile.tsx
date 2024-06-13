@@ -20,7 +20,7 @@ function HeaderMobile() {
     <>
       <nav
         className={`fixed h-16 w-full px-8 md:px-16 flex items-center z-10 border-b-[1px] border-[#ddd] duration-150
-            ${!isAtTop && 'bg-[#040f24]'}
+          ${isAtTop ? 'bg-transparent' : 'bg-[#040404]'}
         `}
       >
         <div
