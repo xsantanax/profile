@@ -1,3 +1,4 @@
+'use client'
 import { useState, useEffect } from 'react'
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
       id='/'
       style={{ backgroundImage: 'url(img/nightcity.jpg)' }}
       className={`bg-center bg-cover h-screen w-full min-h-[766px] px-8 md:px-16 flex justify-center text-shadow-mine shadow-blue-900 ${
-        isLoaded ? 'fade-in' : 'hidden'
+        isLoaded && 'fade-in'
       }`}
     >
       <div className='max-w-[1560px] w-full '>
